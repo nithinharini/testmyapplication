@@ -1,0 +1,153 @@
+.banner_image{
+  background-image: url(../../../assets/images/ios_bg_banner.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  right: 0;
+  z-index: -9;
+  margin-top: -120px;
+}
+
+.bannertexts{
+  position: absolute;
+  width: 500px;
+    margin-top: 25%;
+    margin-left: 8%;
+    color: #ffff;
+    z-index: 999;
+}
+.bannertexts h3{
+  color:#fff;
+}
+.bannertexts p{
+ color:#fff;
+}
+.contact_iconimage{
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+@media (max-width:764px) {
+  .contact_iconimage{
+    width: 55px;
+    height: 55px;
+    margin-right: 9px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+  .banner_image{
+    height: 330px;
+    width: 100%;
+    right: 0;
+    margin-top: 0px;
+    top: -36px;
+  }
+}
+
+.course_image{
+  width: 100%;
+}
+.course_content{
+  margin:10%;
+  text-align: center;
+}
+.left_couser_bg{
+  background-color: #282828;
+  border: 1px solid #282828;
+  margin-bottom: 30px;
+  padding:15px;
+}
+.left_couser_bg h3{
+  color: #ff7a04;
+}
+.course_content_section{
+  background-color: #282828;
+  padding-bottom: 15px;
+}
+.home_aboutmanteios{
+  background-image: url(../../../assets/images/digital3.png);
+  width: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 25px;
+}
+.courses_ulli{
+  font-size: 14px;
+  list-style: none;
+  margin-left:0px;
+}
+.courses_ulli li {
+  margin-bottom: 5px;
+ font-size: 17px;
+}
+.courses_ulli li a{
+  color: #fbfbfb;
+ font-size: 18px;
+}
+
+.courses_ulli li i{
+  font-size: 25px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.fa {
+  transition: transform .2s;
+}
+
+.fa.active {
+  transform: rotateZ(90deg);
+}
+.joinusenroll{
+  color: black;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width:764px) {
+  .courses_ulli{
+    font-size: 14px;
+    list-style: none;
+    margin-left:-40px;
+  }
+  .courses_ulli li a{
+    color: #ff7a04;
+   font-size: 16px;
+  }
+  .joinus3 {
+    border-radius: 34px;
+    margin-left: 20%;
+    color: #ff7a04;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: 2px solid #282828;
+    background-color: #282828;
+    margin-bottom: 15px;
+}
+.joinusenroll{
+color: black;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+}
+}
+@media (max-width:764px) {
+  .bannertexts{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 8%;
+    width: 285px;
+    color: #ffff;
+    z-index: 999;
+  }
+}
+.yourtune{
+  color: black;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}

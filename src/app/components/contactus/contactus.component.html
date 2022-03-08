@@ -1,0 +1,119 @@
+<section class="banner_image">
+  <div class="container">
+    <div class="about_banner">
+     <div class="bannercolor">
+       <div class="bannertexts">
+         <h3>Contact Us</h3>
+       <p>
+        We’re always striving to leverage new approaches. <br/>
+        Reach out to know more about our ideologies and process
+       </p>
+       </div>
+     </div>
+    </div>
+  </div>
+</section>
+ <!-- start contact Area -->
+ <!-- <section style="background-image: url('../../../assets/images/Pattern_2 (1).png');padding-bottom: 20px;"> -->
+  <section>
+  <div class="container">
+      <div class="row" style="margin-bottom: 5%;">
+          <div class="col-md-12 col-lg-4 leftconacts">
+              <div class="contact_right">
+                 <div class="row">
+                         <img src="../../../assets/images/contactones3.png" alt="address_imagesicon" class="contact_iconimage">
+                         <!-- <i class="fa fa-map-marker contacticons" style="padding-left: 12px;"></i> -->
+                     <div class="rightaddres contactus_headings">
+                         <h6>Address</h6>
+                         <p> Rama Mansion 3rd floor,<br />
+                         Motilal Nehru Nagar,Begumpet, <br />
+                         Hyderabad - 500016</p>
+                     </div>
+                 </div>
+              </div>
+              <br />
+              <div class="contact_right contactus_headings">
+                  <div class="row" style="height: 101px;">
+                        <img src="../../../assets/images/contactones2.png" alt="address_imagesicon" class="contact_iconimage">
+                          <!-- <i class="fa fa-envelope contacticons"></i> -->
+                          <div class="rightaddres contactus_headings" style="padding-top: 20px;">
+                          <h6>Email</h6>
+                          <p>
+                            <a style="color:black;" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=Hi+There&to=info@manteio.in&body=body+goes+here" target="_blank">
+                              connect@manteio.in
+                            </a>
+                          </p>
+                      </div>
+              </div>
+              </div>
+              <br />
+              <div class="contact_right contactus_headings" style="padding-top: 20px;">
+                  <div class="row" style="height: 101px;">
+                        <img src="../../../assets/images/contactones4.png" alt="address_imagesicon" class="contact_iconimage">
+                          <!-- <i class="fa fa-phone contacticons"></i> -->
+                          <div class="rightaddres contactus_headings">
+                          <h6>Phone</h6>
+                          <p>
+                              <a href="tel:+919391385170" style="color:black;">+91 9391385170</a>
+                          </p>
+                  </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-12 col-lg-7">
+              <div class="contact_lefts">
+                  <img src="../../../assets/images/contactones1.png" alt="contactblueimage" class="conatactblue" />
+                  <!-- <img src="../../../assets/images/conatctred1.png" alt="contactredimage" class="conatactred" /> -->
+                  <div style="padding-top: 25px;">
+                      <form class="conatact_form" style="padding: 40px;" class="contactform" [formGroup]="contactform" (ngSubmit)="submitForm()">
+                          <div class="form-row">
+                              <div class="col-md-6 contact_gap">
+                                  <input type="text" class="form-control" placeholder="Name" formControlName="Name"  name="Name">
+                                  <span style="font-weight: bold;color: red;font-size: 14PX;"  *ngIf="!contactform.controls['Name'].valid&&contactform.controls['Name'].dirty&&contactform.controls['Name'].enabled">
+                                    <span *ngIf="contactform.controls.Name.errors.required"> Name is Required.</span>
+                                  </span>
+                                </div>
+                              <div class="col-md-6 contact_gap">
+                                  <input type="text" class="form-control" placeholder="Email" formControlName="Email"  name="Email">
+                                  <span style="font-weight: bold;color: red;font-size: 14PX;"  *ngIf="!contactform.controls['Email'].valid&&contactform.controls['Email'].dirty">
+                                    <span *ngIf="contactform.controls.Name.errors.required"> Email is Required.</span>
+                                    <span style="font-weight: bold;color: red;" *ngIf="!contactform.controls['Email'].valid&&contactform.controls['Email'].dirty">
+                                      <span *ngIf="contactform.controls.Email.errors.email">Email is not vaild.</span>
+                                    </span>
+                                  </span>
+                                </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="col-md-6 contact_gap">
+                              <input type="text" class="form-control" placeholder="Phone Number" formControlName="MobileNo" maxlength="10" name="phonenumber" >
+                              <span style="font-weight: bold;color: red;font-size: 14PX;"  *ngIf="!contactform.controls['MobileNo'].valid&&contactform.controls['MobileNo'].dirty">
+                                <span *ngIf="contactform.controls.MobileNo.errors.required">Mobile Number is Required.</span>
+                                <span *ngIf="contactform.controls.MobileNo.errors.minlength">Mobile Number should be length of 10.</span>
+                                 </span>
+                            </div>
+                              <div class="col-md-6 contact_gap">
+                                  <input type="text" class="form-control" placeholder="Your Subject" formControlName="Subject"  name="Subject" >
+                                  <span style="font-weight: bold;color: red;font-size: 14PX;"  *ngIf="!contactform.controls['Subject'].valid&&contactform.controls['Subject'].dirty">
+                                    <span *ngIf="contactform.controls.Subject.errors.required">Subject is Required.</span>
+                                     </span>
+                              </div>
+                          </div>
+                          <div class="form-row">
+                              <div class="col contact_gap">
+                                  <textarea type="text" class="form-control" placeholder="Message" formControlName="Message"  name="Message" rows="4" style="height: 124px;"></textarea>
+                                </div>
+                          </div>
+                          <div class="form-row" style=" margin-bottom: 20px;">
+                              <button type="submit" [disabled]="!contactform.valid" class="btn sendmessage_button" >Send Message</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- end contact Area -->
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-spin-clockwise">
+  <p style="color: white">Please Wait. </p>
+  </ngx-spinner>
